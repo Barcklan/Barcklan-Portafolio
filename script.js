@@ -34,8 +34,39 @@ function efectoHabilidades(){
     }
 }
 
-
 //detecto el scrolling para aplicar la animacion de la barra de habilidades
 window.onscroll = function(){
     efectoHabilidades();
 } 
+// Función para mostrar el modal
+function mostrarModal(texto) {
+    const modal = document.getElementById('modal');
+    const modalTexto = document.getElementById('modal-texto');
+    modalTexto.textContent = texto; // Agregar el texto dinámico
+    modal.style.display = 'block';
+}
+
+// Función para cerrar el modal
+function cerrarModal() {
+    const modal = document.getElementById('modal');
+    modal.style.display = 'none';
+}
+
+function mostrarTooltip(event, texto) {
+    // Cerrar otros tooltips abiertos
+    document.querySelectorAll('.interes.active').forEach((interes) => {
+      interes.classList.remove('active');
+    });
+  
+    // Mostrar el tooltip del botón actual
+    const interes = event.currentTarget;
+    interes.classList.toggle('active');
+}
+
+// Cerrar el modal al hacer clic fuera de él
+window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+};
