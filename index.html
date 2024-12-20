@@ -41,10 +41,10 @@
             <h2>Ingeniero Estadístico</h2>
             <div class="redes">
                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/ovennground/?igsh=bTQ5aXFoZ3o1Y2pq#"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-skype"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-solid fa-rss"></i></a>
+                <a href="https://www.linkedin.com/in/claudio-andres-diaz-vargas"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://barcklan.wordpress.com/"><i class="fa-solid fa-rss"></i></a>
             </div>
         </div>
     </section>
@@ -72,6 +72,7 @@
                         <li>
                             <strong>Email</strong>
                             cdiazv.ies@gmail.com
+                        </li>
                         <li>
                             <strong>Website</strong>
                             www.barcklan.wordpress.com
@@ -83,58 +84,68 @@
                         </li>
                         <li>
                             <strong>Cargo</strong>
-                            <span>---</span>
+                            <span>Freelance</span>
                         </li>
                     </ul>
                 </div>
 
-                <!-- intereses -->
-                <div class="col">
-                    <h3>Intereses</h3>
-                    <div class="contenedor-intereses">
-                        <div class="interes">
+                     <!-- SECCIÓN INTERESES -->
+                     <div class="col">
+                       <h3>Intereses</h3>
+                       <div class="contenedor-intereses">
+                            <div class="interes" onclick="mostrarModal('Disfruto de los videojuegos en mi tiempo libre.')">
                             <i class="fa-solid fa-gamepad"></i>
                             <span>JUEGOS</span>
-                        </div>
-                        <div class="interes">
+                            </div>
+                            <div class="interes" onclick="mostrarModal('Disfruto de la música clásica y moderna.')">
                             <i class="fa-solid fa-headphones"></i>
-                            <span>MUSICA</span>
-                        </div>
-                        <div class="interes">
+                            <span>MÚSICA</span>
+                            </div>
+                            <div class="interes" onclick="mostrarModal('Viajar me permite conocer nuevas culturas y experiencias.')">
                             <i class="fa-solid fa-plane"></i>
                             <span>VIAJAR</span>
-                        </div>
-                        <div class="interes">
+                            </div>
+                            <div class="interes" onclick="mostrarModal('Soy un fanático de los productos Apple y su ecosistema.')">
                             <i class="fa-brands fa-apple"></i>
                             <span>MAC OS</span>
-                        </div>
-                        <div class="interes">
+                            </div>
+                            <div class="interes" onclick="mostrarModal('Hacer deportes me ayuda a mantenerme activo y saludable.')">
                             <i class="fa-solid fa-person-hiking"></i>
                             <span>DEPORTE</span>
-                        </div>
-                        <div class="interes">
+                            </div>
+                            <div class="interes" onclick="mostrarModal('Leer libros es una de mis pasiones; me encanta aprender cosas nuevas.')">
                             <i class="fa-solid fa-book"></i>
                             <span>LIBROS</span>
-                        </div>
-                        <div class="interes">
+                            </div>
+                            <div class="interes" onclick="mostrarModal('Me interesan los autos y su tecnología avanzada.')">
                             <i class="fa-solid fa-car"></i>
                             <span>AUTOS</span>
-                        </div>
-                        <div class="interes">
+                            </div>
+                            <div class="interes" onclick="mostrarModal('Me apasiona capturar momentos a través de la fotografía.')">
                             <i class="fa-solid fa-camera"></i>
                             <span>FOTOS</span>
+                            </div>
+                           
                         </div>
                         
                     </div>
-                </div>
-            </div>
-            <button>
-                Descargar CV <i class="fa-solid fa-download"></i>
-                <span class="overlay"></span>
-            </button>
+                
+                    <!-- MODAL -->
+                       <div id="modal" class="modal">
+                           <div class="modal-content">
+                               <span class="close" onclick="cerrarModal()">&times;</span>
+                               <p id="modal-texto"></p>
+                           </div>
+                       </div>
+           </div> 
+           <a href="https://raw.githubusercontent.com/Barcklan/Barcklan-Portafolio/main/Curriculum%20Vitae%20-%20Claudio%20Di%CC%81az.pdf" download>
+           <button>
+            Descargar CV <i class="fa-solid fa-download"></i>
+            <span class="overlay"></span>
+           </button>
+           </a>
         </div>
-    </section>
-
+     </section>                  
     <!-- SECCION SKILLS -->
     <section class="skills" id="skills">
         <div class="contenido-seccion">
