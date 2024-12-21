@@ -70,3 +70,21 @@ window.onclick = function(event) {
         modal.style.display = 'none';
     }
 };
+
+document.addEventListener('DOMContentLoaded', function() {
+    emailjs.init('kd4sAPR7gQ3VGmBDH'); // Reemplaza 'YOUR_USER_ID' con tu User ID de EmailJS
+
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const serviceID = 'service_6gbjddk';
+        const templateID = 'template_vatdvvl';
+
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(function() {
+                alert('¡Mensaje enviado!. ¡Muchas Gracias, Saludos!');
+            }, function(error) {
+                alert('Error al enviar el mensaje: ' + JSON.stringify(error));
+            });
+    });
+});
